@@ -26,7 +26,7 @@ function App() {
          lastName: "",
          email: "",
        });
-     }, 5000);
+     }, 6000);
   };
   const handleFirstName = (event) => {
     setValue({ ...value, firstName: event.target.value });

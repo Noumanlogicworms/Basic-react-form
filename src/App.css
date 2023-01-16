@@ -3,13 +3,14 @@
 }
 
 .App-header {
-  background-color: #0A2647;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  animation: color-change-5x 8s linear infinite alternate both;
 }
 .title{
   display: flex;
@@ -23,7 +24,7 @@
   padding: 30px;
   background-color: #0081B4;
   border-radius: 0.25rem;
-  
+  box-shadow: 0 0 0 0.25rem rgb(11,110,74, 0.219);
 }
 
 .success-message{
@@ -47,11 +48,29 @@
 }
 .btn:hover{
   background-color: #006e4a;
+  border-color: #006e4a;
 }
 .btn:focus{
   background-color: #006e4a;
   border-color: #006e4a;
-  box-shadow: 0 0 0 0.25rem rgba(0, 196, 59, 0.219);
+  box-shadow: 0 0 0 0.25rem rgb(11,110,74, 0.219);
+}
+@keyframes color-change-5x {
+  0% {
+    background: #0A2647;
+  }
+  25% {
+    background: #144272;
+  }
+  50% {
+    background: #205295;
+  }
+  75% {
+    background: #2C74B3;
+  }
+  100% {
+    background: #317fc4;
+  }
 }
 
 @keyframes fade-in {
